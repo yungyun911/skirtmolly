@@ -1,0 +1,288 @@
+
+
+body{
+    background-color: white;}
+    
+
+.frame{
+    margin: 30px 20px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+/*navigator*/
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+li{
+    display: inline;
+    align-self:center;
+    margin:0;
+    margin-left:15px;
+
+
+}
+
+ul{
+    margin:0;
+}
+
+
+.logo-image {
+    width: 200px; /* 원하는 너비 설정 */
+    height: auto; /* 비율 유지 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 전환 */
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* 호버 시 확대 효과 */
+    opacity: 0.8; /* 호버 시 투명도 조정 */
+}
+
+.site-name{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 650;
+    font-style: normal;
+    color:#7283aa;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+    
+    
+}
+
+
+h3:hover{
+    color: #ce9a7f;
+    font-size: 42px;
+
+}
+
+
+.nav-menu{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+    font-style: normal;
+    color: #7283aa;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+    
+    
+}
+
+a{ 
+    font-family: "Montserrat", sans-serif;
+    color:#7283aa;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration:none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+
+}
+
+a:hover{
+    color: #ce9a7f;
+    font-size: 32px 
+
+
+}
+
+
+
+
+/*nav-link*/
+
+h5{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: indianred;
+    margin:0;
+    z-index: 1;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+    
+    
+}
+
+h5:hover{
+    color: black;
+    font-size: 32px;
+
+}
+
+.frame1{
+    padding: 15px;
+    margin-bottom: 750px;
+    max-width: 200px; /* 가로 최대 범위를 제한 */
+    
+    
+}
+
+.navigator1{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 5px;
+}
+
+/*하위 메뉴 스타일*/
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0; /* 기본적으로 보이지 않음 */
+    overflow: hidden; /* 숨겨진 영역 감추기 */
+    transition: max-height 0.3s ease; /* 슬라이드 애니메이션 */
+}
+
+
+.menu-item{
+    margin-bottom: 5px;
+}
+
+.menu-item:hover .submenu{
+
+    max-height: 200px;
+}
+
+
+.submenu li{
+    padding: 10px 2px;
+}
+
+.submenu li a{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #8193c9;
+    text-decoration: none;
+    display: block;
+    transition: font-size 0.2s ease, color 0.2s ease;
+
+}
+
+.submenu li a:hover{
+font-size: 20px;
+color:#ce9a7f;
+}
+
+
+.large-font{
+    font-size: 30px;
+    transition: font-size 0.5s ease;
+}
+
+
+
+.large-font:hover{
+    font-size: 32px;
+
+}
+
+.mainimage {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 100%;
+   max-height: 100%;
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200%;
+   height: 200%;
+   z-index: -1;
+
+}
+
+.center-image{
+
+    
+    max-width: 100%; /* 이미지 최대 크기 설정 */
+    max-height: 90%;
+    opacity: 0; /* 시작은 투명 */
+    animation: fadeIn 5s forwards; /* 페이드 인 애니메이션 */
+}
+
+
+
+/* 페이드 인 애니메이션 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Footer 스타일 */
+.footer {
+    color: #7283aa;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%; /* 화면 전체 너비에 맞추기 */
+    background-color: #fff; /* 배경 색상 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p1 {
+    font-weight: bold; /* 폰트를 두껍게 */
+}
+
+/* 탑 버튼 호버 스타일 */
+.top-button:hover {
+    background-color: #7283aa; /* 호버 시 색상 변경 */
+}
+
+/* 탑 버튼 클릭 시 페이지 상단으로 스크롤 */
+.top-button:active {
+    transform: translateY(-2px); /* 클릭 시 약간 위로 이동 */
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0; /* 기본 투명 */
+    visibility: hidden; /* 기본적으로 숨김 */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}

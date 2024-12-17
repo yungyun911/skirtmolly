@@ -1,0 +1,748 @@
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 레이아웃 설정 */
+.frame {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navigator */
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+li {
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul {
+    margin: 0;
+}
+
+.site-name {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 650;
+    color: #ce9a7f;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.logo-image {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.home-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #7283aa;
+    font-size: 40px;
+    font-weight: 650;
+    transition: color 0.5s ease, transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #ce9a7f;
+    transform: scale(1.1);
+}
+
+.nav-menu {
+    font-size: 30px;
+    color: #7283aa;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-menu:hover {
+    color: #ce9a7f;
+    font-size: 32px;
+}
+
+h5 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+    color: #ce9a7f;
+    margin: 0;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+h5:hover {
+    color: black;
+    font-size: 32px;
+}
+
+.frame1 {
+    padding: 15px;
+    margin-bottom: 600px;
+    max-width: 200px;
+}
+
+.navigator1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+/* 하위 메뉴 스타일 */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.menu-item:hover .submenu {
+    max-height: 200px;
+}
+
+.submenu li {
+    padding: 10px 2px;
+}
+
+.submenu li a {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #7283aa;
+    text-decoration: none;
+    display: block;
+    transition: font-size 0.2s ease, color 0.2s ease;
+}
+
+.submenu li a:hover {
+    font-size: 20px;
+    color: #ce9a7f;
+}
+
+.large-font {
+    font-size: 30px;
+    transition: font-size 0.5s ease;
+}
+
+.large-font:hover {
+    font-size: 32px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #ce9a7f;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #ce9a7f;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ce9a7f;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #7283aa;
+}
+
+/* 레스폰시브 디자인 */
+@media (max-width: 768px) {
+    .navigator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .contact-section {
+        padding: 30px;
+    }
+
+    .contact-form-container {
+        padding: 0 20px;
+    }
+
+    .navigator1 {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .frame1 {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
+
+.footer {
+    color: #7283aa;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p1 {
+    font-weight: bold;
+}
+
+/* 탑 버튼 */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ce9a7f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.top-button:hover {
+    background-color: #7283aa;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+.popup.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}body {
+    background-color:white; 
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 레이아웃 설정 */
+.frame {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*navigator*/
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+li{
+    display: inline;
+    align-self:center;
+    margin:0;
+    margin-left:15px;
+
+
+}
+
+ul{
+    margin:0;
+}
+
+
+.site-name {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 650px;
+    font-style: normal;
+    color: #ce9a7f;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+
+
+.logo-image {
+    width: 200px; /* 원하는 너비 설정 */
+    height: auto; /* 비율 유지 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 전환 */
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* 호버 시 확대 효과 */
+    opacity: 0.8; /* 호버 시 투명도 조정 */
+}
+
+.home-link {
+    display: inline-block; /* 이미지와 링크가 함께 작동하도록 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+/* 기본 스타일 제거 */
+a { 
+    text-decoration: none;
+}
+
+/* KIM.TETTO 로고 스타일 */
+.home-link {
+    font-family: "Montserrat", sans-serif;
+    color: #7283aa;
+    font-size: 40px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.home-link:hover {
+    color: #ce9a7f;
+    font-size: 42px;
+}
+
+
+.nav-menu {
+    font-size: 30px;
+    color: #7283aa;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-menu:hover {
+    color: #ce9a7f;
+    font-size: 32px;
+}
+
+a{ 
+    font-family: "Montserrat", sans-serif;
+    color:#7283aa;
+    font-size: 30px;
+    font-weight: 650;
+    font-style: normal;
+    text-decoration:none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+
+}
+
+a:hover{
+    color: #7283aa;
+    font-size: 32px 
+
+
+}
+
+
+
+
+/*nav-link*/
+
+h5{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+    font-style: normal;
+    color: #ce9a7f;
+    margin:0;
+    z-index: 1;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+    
+    
+}
+
+h5:hover{
+    color: black;
+    font-size: 32px;
+
+}
+
+.frame1{
+    padding: 15px;
+    margin-bottom: 600px;
+    max-width: 200px; /* 가로 최대 범위를 제한 */
+    
+    
+}
+
+.navigator1{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 5px;
+}
+
+/*하위 메뉴 스타일*/
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0; /* 기본적으로 보이지 않음 */
+    overflow: hidden; /* 숨겨진 영역 감추기 */
+    transition: max-height 0.3s ease; /* 슬라이드 애니메이션 */
+}
+
+
+.menu-item{
+    margin-bottom: 5px;
+}
+
+.menu-item:hover .submenu{
+
+    max-height: 200px;
+}
+
+
+.submenu li{
+    padding: 10px 2px;
+}
+
+.submenu li a{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #7283aa;
+    text-decoration: none;
+    display: block;
+    transition: font-size 0.2s ease, color 0.2s ease;
+
+}
+
+.submenu li a:hover{
+font-size: 20px;
+color:#ce9a7f;
+}
+
+
+.large-font{
+    font-size: 30px;
+    transition: font-size 0.5s ease;
+}
+
+
+
+.large-font:hover{
+    font-size: 32px;
+
+}
+
+
+
+/* CONTACT SECTION */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+    
+    /* 부모 요소에서 수평/수직 중앙 정렬 */
+    position: absolute; /* 위치를 절대 지정 */
+    top: 60%; /* 화면의 50% 위치 */
+    left: 50%; /* 화면의 50% 위치 */
+    transform: translate(-50%, -50%); /* 정확히 중앙에 맞추기 위해서 이동 */
+
+.section-title {
+    font-size: 36px;
+    color: #ce9a7f;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #ce9a7f;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ce9a7f;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #7283aa;
+}
+
+/* 레스폰시브 디자인 */
+@media (max-width: 768px) {
+    .navigator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .contact-section {
+        padding: 30px;
+    }
+
+    .contact-form-container {
+        padding: 0 20px;
+    }
+
+}
+}
+
+.footer {
+    color: #7283aa;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%; /* 화면 전체 너비에 맞추기 */
+    background-color: #fff; /* 배경 색상 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p1 {
+    font-weight: bold; /* 폰트를 두껍게 */
+}
+
+
+/* 탑 버튼 */
+.top-button {
+    position: fixed; /* 화면에 고정 */
+    bottom: 20px; /* 화면 아래쪽에 배치 */
+    right: 20px; /* 화면 오른쪽에 배치 */
+    background-color: #ce9a7f; /* 버튼 배경색 */
+    color: white; /* 텍스트 색 */
+    border: none;
+    border-radius: 50%; /* 원형 버튼 */
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: none; /* 기본적으로 숨김 */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+
+/* 탑 버튼 호버 스타일 */
+.top-button:hover {
+    background-color: #7283aa; /* 호버 시 색상 변경 */
+}
+
+/* 탑 버튼 클릭 시 페이지 상단으로 스크롤 */
+.top-button:active {
+    transform: translateY(-2px); /* 클릭 시 약간 위로 이동 */
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0; /* 기본 투명 */
+    visibility: hidden; /* 기본적으로 숨김 */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+

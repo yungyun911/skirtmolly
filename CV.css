@@ -1,0 +1,481 @@
+
+
+body{
+    background-color: white;}
+
+.frame{
+    margin: 30px 20px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+/*navigator*/
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+li{
+    display: inline;
+    align-self:center;
+    margin:0;
+    margin-left:15px;
+
+
+}
+
+ul{
+    margin:0;
+}
+
+.site-name{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 650;
+    font-style: normal;
+    color: #7283aa;
+    transition: color 0.5s ease, font-size 0.5s ease; /* 부드러운 전환 */
+    
+    
+}
+
+.logo-image {
+    width: 200px; /* 원하는 너비 설정 */
+    height: auto; /* 비율 유지 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 전환 */
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* 호버 시 확대 효과 */
+    opacity: 0.8; /* 호버 시 투명도 조정 */
+}
+
+.home-link {
+    display: inline-block; /* 이미지와 링크가 함께 작동하도록 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+/* 기본 스타일 제거 */
+a { 
+    text-decoration: none;
+}
+
+/* KIM.TETTO 로고 스타일 */
+.home-link {
+    font-family: "Montserrat", sans-serif;
+    color: #7283aa;
+    font-size: 40px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.home-link:hover {
+    color: #ce9a7f;
+    font-size: 42px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.nav-menu {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+    font-style: normal;
+    color: #7283aa;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.nav-menu:hover {
+    color: #ce9a7f;
+    font-size: 32px;
+}
+
+
+/*공통 css 끝*/
+
+
+
+
+
+
+/* 전체 레이아웃 */
+body {
+    margin-bottom: 100px;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: white
+    
+}
+
+.cv-container {
+    display: flex;
+    height: 200vh; /* 화면 전체 높이 */
+    margin-bottom: 400px;
+}
+
+/* 좌측 네비게이션 스타일 */
+.cv-sidebar {
+    width: 250px; /* 좌측 메뉴 너비 */
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* 좌측 고정 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cv-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7283aa;
+    margin-bottom: 20px;
+}
+
+.cv-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cv-menu li {
+    margin: 15px 0;
+}
+
+.cv-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.cv-menu a:hover {
+    color: #ce9a7f;
+}
+
+/* 본문 스타일 */
+.cv-content {
+    margin-left: 250px;
+    padding: 40px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    line-height: 1.6; /* 가독성 향상 */
+    color: #333;
+    max-width: 800px; /* 본문 너비 제한 */
+
+    margin: 40px auto; /* 중앙 정렬 */
+    transition: max-width 0.3s ease;
+}
+.cv-section {
+    margin-bottom: 50px;
+}
+
+.cv-section h2 {
+    font-size: 24px;
+    color: #ce9a7f;
+    margin-bottom: 10px;
+}
+
+.cv-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+
+
+/*사이드바*/
+
+
+.cv-sidebar {
+    width: 250px;
+    background-color: white;
+    border-right: 2px solid #ce9a7f; 
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -280px;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+
+}
+
+.frame:hover .cv-sidebar{
+    left: 0;
+}
+
+.cv-sidebar:hover{
+    left:0;
+}
+
+.cv-sidebar h1 {
+    font-size: 35px;
+    color: #7283aa;
+    text-transform: uppercase; /* 대문자로 변환 */
+    margin-bottom: 20px;
+}
+
+.cv-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cv-sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.cv-sidebar ul li a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #7283aa;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-sidebar ul li a:hover {
+    color: #ce9a7f;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.1); 
+
+}
+
+
+
+.cv-content {
+    margin-left: 250px;
+    padding: 40px;
+    background-color: #fff; /* 깔끔한 배경 */
+    border-radius: 8px; /* 부드러운 모서리 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+    line-height: 1.6; /* 가독성 향상 */
+    color: #333;
+    max-width: 1200px; /* 본문 너비 제한 */
+    height: 2000px;
+    margin: 40px auto; /* 중앙 정렬 */
+    padding-bottom: 80px; /* 풋터 높이만큼 여백 추가 */
+    
+}
+
+.cv-content h2 {
+    font-size: 22px;
+    color: #ce9a7f;
+    margin-bottom: 10px;
+}
+
+.cv-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    height: 25vh; /* 부모 요소의 높이를 화면 높이로 설정 */
+}
+.logo{
+    width: 250px; /* 원하는 너비 설정 */
+    height: auto; /* 비율 유지 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 부드러운 전환 */
+    ;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .cv-sidebar {
+        width: 200px;
+    }
+
+    .cv-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-sidebar {
+        position: static; /* 고정 해제 */
+        width: 100%;
+        box-shadow: none; /* 그림자 제거 */
+    }
+
+    .cv-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cv-sidebar {
+        width: 200px;
+    }
+
+    .cv-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-sidebar {
+        position: static; /* 고정 해제 */
+        width: 100%;
+        box-shadow: none; /* 그림자 제거 */
+    }
+
+    .cv-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+
+/* 탑 버튼 */
+.top-button {
+    position: fixed; /* 화면에 고정 */
+    bottom: 20px; /* 화면 아래쪽에 배치 */
+    right: 20px; /* 화면 오른쪽에 배치 */
+    background-color: #ce9a7f; /* 버튼 배경색 */
+    color: white; /* 텍스트 색 */
+    border: none;
+    border-radius: 50%; /* 원형 버튼 */
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: none; /* 기본적으로 숨김 */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+
+/* 탑 버튼 호버 스타일 */
+.top-button:hover {
+    background-color: #7283aa; /* 호버 시 색상 변경 */
+}
+
+/* 탑 버튼 클릭 시 페이지 상단으로 스크롤 */
+.top-button:active {
+    transform: translateY(-2px); /* 클릭 시 약간 위로 이동 */
+}
+
+/* Footer 스타일 */
+.footer {
+    color: #7283aa;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%; /* 화면 전체 너비에 맞추기 */
+    background-color: #fff; /* 배경 색상 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p1 {
+    font-weight: bold; /* 폰트를 두껍게 */
+}
+
+
+
+
+/* 인스타그램 아이콘 스타일 */
+.cv-section a {
+    color: #7283aa; /* 아이콘 기본 색상 (블루 계열) */
+    font-size: 15px; /* 아이콘 크기 */
+    transition: color 0.3s ease, transform 0.3s ease; /* 색상과 크기 변화 부드럽게 적용 */
+}
+
+.cv-section a:hover {
+    color: #ce9a7f; /* 호버 시 색상 변경 (아이콘 색상) */
+    transform: scale(1.2); /* 호버 시 아이콘 확대 효과 */
+}
+
+.cv-section i {
+    display: inline-block; /* 아이콘을 inline-block으로 설정 */
+    margin-left: 1px; /* 텍스트와 아이콘 사이 간격 */
+}
+
+/* 아이콘 크기 조정 */
+.cv-section i.fa-instagram {
+    font-size: 20px; /* 아이콘 크기 */
+    color: #7283aa; /* 기본 색상 */
+    transition: color 0.3s, transform 0.3s; /* 색상과 크기 변화 부드럽게 */
+}
+
+.cv-section i.fa-instagram:hover {
+    color: #ce9a7f; /* 호버 시 색상 변경 */
+    transform: scale(1.1); /* 호버 시 약간 확대 */
+}
+
+/* 팝업 메시지 스타일 */
+.popup {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* 팝업 나타날 때 부드러운 효과 */
+.popup p {
+    margin: 0;
+    z-index: 1000; /* Ensures it's on top */
+}
+
+
+/* 추가 스타일: 제출 버튼 등 */
+.submit-button {
+    background-color: #7283aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ce9a7f;
+}
+

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration</title>
+    
+    <link rel="stylesheet" type="text/css" href="Illustration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Swiper.js CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- Swiper.js JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- 타이틀 아이콘 추가 -->
+<link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- top -->
+
+    <button class="top-button" onclick="window.scrollTo(0, 0)">
+        <i class="fas fa-arrow-up"></i> <!-- Font Awesome 화살표 아이콘 -->
+    </button>
+    
+ <!-- 자바스크립트 코드 추가 -->
+ <script>
+    window.onscroll = function() {
+        var button = document.querySelector('.top-button');
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            button.style.display = 'flex'; // 스크롤을 내리면 버튼 표시
+        } else {
+            button.style.display = 'none'; // 스크롤을 맨 위로 올리면 버튼 숨김
+        }
+    };
+</script>
+
+
+
+    <div class="frame">
+        
+        <nav class="navigator">
+
+            <a href="index.html" class="home-link">
+                <img src="logo1.png" alt="KIM.TETTO" class="logo-image">
+            </a>
+        <ul>
+            <li><a class="nav-menu" href="contact.html">CONTACT</a></li>
+            <li><a class="nav-menu" href="https://www.instagram.com/kim.tetto/?igsh=MTloZDBwNHRqNmhoNA%3D%3D">INSTAGRAM</a></li>
+        </ul>
+
+    </nav>
+
+    </div>
+
+    
+
+    
+    <div class="frame1">
+
+        <nav class="navigator1">
+
+            <h5><a href="CV.html" class="nav-link large-font">CV</a></h5>
+
+
+            <div class="menu-item">
+                <!--하위메뉴-->
+            <h5><a class="nav-link large-font">ARTWORKS</a></h5>
+            <ul class="submenu">
+                <li><a href="Illustration.html" class="menu-link">Illustration</a></li>
+                <li><a href="Drawings.html" class="menu-link">Drawings</a></li>
+            </ul>
+        </div>
+
+            <h5><a href="EXHIBITION.html" class="nav-link large-font">EXHIBITION</a></h5>
+
+        </nav>
+
+    
+
+    </div>
+
+
+    <section class="works-section">
+        <div class="works-grid">
+
+
+            <!-- 이미지 카드 -->
+            <div class="work-item">
+
+                <img src="I1.jpg" alt="ill 1" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I2.jpg" alt="ill 2" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I3.jpg" alt="ill 3" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I4.jpg" alt="ill 4" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I5.jpg" alt="ill 5" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I6.jpg" alt="ill 6" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I7.jpg" alt="ill 7" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I8.jpg" alt="ill 8" class="work-image">
+            </div>
+
+            <div class="work-item">
+                <img src="I9.jpg" alt="ill 9" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I10.jpg" alt="ill 10" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I11.jpg" alt="ill 11" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I12.jpg" alt="ill 12" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I13.jpg" alt="ill 13" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I14.jpg" alt="ill 14" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I15.jpg" alt="ill 15" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I16.jpg" alt="ill 16" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I17.jpg" alt="ill 17" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I18.jpg" alt="ill 18" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="I19.jpg" alt="ill 19" class="work-image">
+            </div>
+            <div class="work-item">
+                <img src="120.jpg" alt="ill 20" class="work-image">
+            </div>
+        </div>
+    </section>
+
+
+<!-- 모달 창 -->
+<div class="modal" id="imageModal">
+    <div class="modal-content">
+        <!-- Swiper 슬라이더 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- 슬라이드 이미지들 -->
+                <div class="swiper-slide"><img src="I1.jpg" alt="ill 1"></div>
+                <div class="swiper-slide"><img src="I2.jpg" alt="ill 2"></div>
+                <div class="swiper-slide"><img src="I3.jpg" alt="ill 3"></div>
+                <div class="swiper-slide"><img src="I4.jpg" alt="ill 4"></div>
+                <div class="swiper-slide"><img src="I5.jpg" alt="ill 5"></div>
+                <div class="swiper-slide"><img src="I6.jpg" alt="ill 6"></div>
+                <div class="swiper-slide"><img src="I7.jpg" alt="ill 7"></div>
+                <div class="swiper-slide"><img src="I8.jpg" alt="ill 8"></div>
+                <div class="swiper-slide"><img src="I9.jpg" alt="ill 9"></div>
+                <div class="swiper-slide"><img src="I10.jpg" alt="ill 10"></div>
+                <div class="swiper-slide"><img src="I11.jpg" alt="ill 11"></div>
+                <div class="swiper-slide"><img src="I12.jpg" alt="ill 12"></div>
+                <div class="swiper-slide"><img src="I13.jpg" alt="ill 13"></div>
+                <div class="swiper-slide"><img src="I14.jpg" alt="ill 14"></div>
+                <div class="swiper-slide"><img src="I15.jpg" alt="ill 15"></div>
+                <div class="swiper-slide"><img src="I16.jpg" alt="ill 16"></div>
+                <div class="swiper-slide"><img src="I17.jpg" alt="ill 17"></div>
+                <div class="swiper-slide"><img src="I18.jpg" alt="ill 18"></div>
+                <div class="swiper-slide"><img src="I19.jpg" alt="ill 19"></div>
+                <div class="swiper-slide"><img src="120.jpg" alt="ill 20"></div>
+
+            </div>
+
+            <!-- 네비게이션 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 닫기 버튼 -->
+        <span class="close-btn" id="closeModal">&times;</span>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("imageModal");
+        const closeModal = document.getElementById("closeModal");
+        const images = document.querySelectorAll(".work-image");
+    
+        // Swiper 초기화
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    
+        // 이미지 클릭 이벤트
+        images.forEach((image, index) => {
+            image.addEventListener("click", () => {
+                swiper.slideToLoop(index, 0); // 클릭한 이미지로 이동
+                modal.style.display = "flex";
+            });
+        });
+    
+        // 모달 닫기 이벤트
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    
+        // 모달 외부 클릭 시 닫기
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+    </script>
+    
+    <!--footer-->
+<footer class="footer">
+    <div class="footer-content">
+        
+        <P1>KIM.TETTO. Personal Website</P1>
+        <p>&copy; 2024 KIM.TETTO. All rights reserved.</p>
+       
+        </div>
+    </div>
+</footer>

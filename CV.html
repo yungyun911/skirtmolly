@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    
+    <link rel="stylesheet" type="text/css" href="CV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<!-- 타이틀 아이콘 추가 -->
+<link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+     <!-- 여기에 HTML 콘텐츠 -->
+
+     <button class="top-button" onclick="window.scrollTo(0, 0)">
+        <i class="fas fa-arrow-up"></i> <!-- Font Awesome 화살표 아이콘 -->
+    </button>
+    
+ <!-- 자바스크립트 코드 추가 -->
+ <script>
+    window.onscroll = function() {
+        var button = document.querySelector('.top-button');
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            button.style.display = 'flex'; // 스크롤을 내리면 버튼 표시
+        } else {
+            button.style.display = 'none'; // 스크롤을 맨 위로 올리면 버튼 숨김
+        }
+    };
+</script>
+
+    <div class="frame">
+        
+        <nav class="navigator">
+
+            <a href="index.html" class="home-link">
+                <img src="logo1.png" alt="KIM.TETTO" class="logo-image">
+            </a>
+        <ul>
+            <li><a class="nav-menu" href="contact.html">CONTACT</a></li>
+            <li><a class="nav-menu" href="https://www.instagram.com/kim.tetto/?igsh=MTloZDBwNHRqNmhoNA%3D%3D">INSTAGRAM</a></li>
+        </ul>
+
+    </nav>
+
+    </div>
+
+    <div class="cv-container">
+        <!-- 좌측 고정 네비게이션 -->
+        <nav class="cv-sidebar">
+            <h1 class="cv-name">KIM.TETTO</h1>
+            <ul class="cv-menu">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- 우측 본문 -->
+        <div class="cv-content">
+            <section id="about" class="cv-section">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Logo" class="logo">
+                </div>
+
+                <br>
+                <h2>About</h2>
+                <p>KIM.TETTO는 감성적이고 창의적인 아티스트로, 다양한 시각 예술 작품을 통해 독창적인 시각을 공유한다.
+                    섬세한 선과 풍부한 색감으로 묘사된 일러스트는 일일상 속에서 영감을 얻어 창조된다. 
+                    주로 일러스트레이션과 드로잉을 중심으로 활동하며, 섬세한 표현과 매력적인 시작적 이야기를 만들어낸다. 
+                    KIM.TETTO의 작업은 일상에서 발견한 영감들을 예술로 승화시키며, 사람들에게 새로운 시각적 경험을 제공하고 있다.
+                    현대적 감각과 개인적인 스토리가 결합된 독특한 스타일로 많은 이들의 관심을 끌고 있다.
+                    다양한 플랫폼에서 그의 작품과 예술 철학을 나누며 독창적인 세계를 확장하고자 한다. 
+
+        
+                    <p>KIM.TETTO is an emotional and creative artist who shares original perspectives through various visual artworks. 
+                        Her illustrations, characterized by delicate lines and rich colors, are inspired by everyday life. 
+                        She primarily focuses on illustration and drawing, creating intricate expressions and captivating narratives. 
+                        KIM.TETTO's work transforms inspirations found in daily life into art, providing people with new visual experiences. 
+                        She is attracting attention with his unique style that combines modern sensibilities and personal stories. 
+                        She aims to expand his original world by sharing his work and artistic philosophy on various platforms.</p>
+
+                </p>
+
+            </section>
+            <section id="education" class="cv-section">
+                <h2>Education</h2>
+                <p>서울여자대학교 아트앤디자인스쿨 현대미술전공</p>
+                <p>Seoul Women's University Shcool Art Of Design Contemporary Art</p>
+
+
+
+            </section>
+            <section id="experience" class="cv-section">
+                <h2>Experience</h2>
+                <p>Freelance Illustrator | 2023 - Present</p>
+                <br>
+                <p>2014 갤러리 나무, '시민과 함께하는 정크아트' 단체전</p>
+                <p>2018 인천문화예숧회관 대전시실, '인천미술의 꿈' 단체전</p>
+                <p>2021 Seoul Women's University 바롬갤러리, '강제동원역사기억전시회</p>
+                <P>2022 중랑아트센터 제1전시실, '점점점"</P>
+                <P>2022 갤러리AMIDI 신촌, 'Algority : Algorithm + Reality' 단체기획전</P>
+                <p>2022 카페 소솜 갤러리 ㄱ, '관계와 위로의 이야기'</p>
+                <p>2022 문화공간 정담, 'Blur : 시선으로 밝힘' 노끈 X 우크반 프로젝트 전시</p>
+                <P>2024 Seoul Women's University 바롬갤러리 '표상재채기'</P>
+
+                <br>
+                <p>2014 Gallery Namu, 'Junk Art with Citizens' Group Exhibition</p>
+                <p>2018 Incheon Cultural Arts Center, Daejeon Hall, 'Dreams of Incheon Art' Group Exhibition</p>
+                <p>2021 Seoul Women's University Barom Gallery, 'Forced Mobilization Historical Memory Exhibition'</p>
+                <p>2022 Jungnang Art Center, Exhibition Room 1, 'Dot Dot Dot'</p>
+                <p>2022 Gallery AMIDI, Sinchon, 'Algority: Algorithm + Reality' Group Curated Exhibition</p>
+                <p>2022 Cafe Sosom Gallery ㄱ, 'Stories of Relationship and Comfort'</p>
+                <p>2022 Cultural Space Jeongdam, 'Blur: Illuminating with Gaze' Nokken X Ukban Project Exhibition</p>
+                <p>2024 Seoul Women's University Barom Gallery, 'Representation Sneezing'</p>
+
+
+                <section id="contact" class="cv-section">
+                    <br>
+                    <h2>Contact</h2>
+                    <p>Email: tettotto@naver.com</p>
+                    <p>Phone: +82 10-1234-5678</p>
+                    <p>Instagram: 
+                        <a href="https://www.instagram.com/kim.tetto/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </p>
+                </section>
+                
+
+            <button class="top-button" onclick="scrollToTop()">↑</button>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-content">
+        
+        <P1>KIM.TETTO. Personal Website</P1>
+        <p>&copy; 2024 KIM.TETTO. All rights reserved.</p>
+       
+        </div>
+    </div>
+</footer>
+
+    
+
+
+  
